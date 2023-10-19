@@ -7,12 +7,81 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="221dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="525dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/employee_details_management"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="27dp"
+        android:background="#855A5A"
+        android:text="@string/insert_text"
+        app:layout_constraintBottom_toTopOf="@+id/updateBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:strokeColor="#AC9C9C" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="27dp"
+        android:background="#855A5A"
+        android:text="@string/update_text"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="27dp"
+        android:background="#855A5A"
+        android:text="@string/delete_text"
+        app:layout_constraintBottom_toTopOf="@+id/viewBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn" />
+
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="246dp"
+        android:background="#855A5A"
+        android:text="@string/view_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/deleteBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
