@@ -6,7 +6,7 @@ public class Employee {
     private String dep;
     private String salary;
 
-    public Employee() {
+    public Employee(String empName, String empDept, String empSalary) {
         // Default constructor
     }
 
