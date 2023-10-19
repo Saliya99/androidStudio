@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">sqLite</string>
+    <string name="employee_details_management">Employee Details Management</string>
+    <string name="insert_text">Insert</string>
+    <string name="update_text">Update</string>
+    <string name="delete_text">Delete</string>
+    <string name="view_text">View</string>
 </resources>
