@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.sqlite.employeecrud.Employee;
+
 public class DBHandler extends SQLiteOpenHelper {
 
     // Database name and version
@@ -31,5 +33,16 @@ public class DBHandler extends SQLiteOpenHelper {
         String sql = "DROP TABLE IF EXISTS employee_details;";
         sqLiteDatabase.execSQL(sql);
         onCreate(sqLiteDatabase);
+    }
+    public void addEmployee(Employee employee) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("name", employee.getName());
+        contentValues.put("dep", employee.getDepartment());
+        contentValues.put("salary", employee.getSalary());
+
+        sqLiteDatabase.insert("employee",null,contentValues);
+        sqLiteDatabase.close();
     }
 }
